@@ -1,0 +1,37 @@
+---
+title: "SamplePlots"
+author: "Theo Van Rooy"
+date: "Wednesday, March 18, 2015"
+output: html_document
+---
+
+This is a collection of some ggplots with various themes to get a flavor of what the theme does.
+
+```{r}
+library(ggplotThemes)
+
+```
+
+
+### Default ggplot2
+
+```{r echo=TRUE}
+plot1=ggplot(iris, aes(x=Sepal.Length, fill=Species))
+plot2=ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width))
+plot3=ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, fill=Species, color=Species, shape=Species))
+
+plot1+geom_bar()
+plot2+geom_density2d(width=4)
+plot3+geom_point(size=5)
+
+```
+
+### fte_theme()
+
+```{r echo=FALSE}
+
+plot1+geom_bar()+fte_theme()
+plot2+geom_density2d(width=4)+fte_theme()
+plot3+geom_point(size=5)+fte_theme()
+
+```

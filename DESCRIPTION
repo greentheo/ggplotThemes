@@ -1,0 +1,8 @@
+Package: ggplotThemes
+Title: Extra styling themes for ggplot
+Version: 0.0.0.9000
+Authors@R: person("Van Rooy", "Theo", , "theo@royaltyanalytics.com", role = c("aut", "cre"))
+Description: provides several themes to extend and override ggplot basics
+Depends: R (>= 3.1.2), ggplot2, scales, grid, RColorBrewer
+License: What license is it under?
+LazyData: true
